@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artisan | Premium Design Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader">
+        <svg
+          width="80"
+          height="80"
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#fff"
+        >
+          <g fill="none" fill-rule="evenodd" stroke-width="2">
+            <circle cx="22" cy="22" r="1">
+              <animate
+                attributeName="r"
+                begin="0s"
+                dur="1.8s"
+                values="1; 20"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.165, 0.84, 0.44, 1"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="stroke-opacity"
+                begin="0s"
+                dur="1.8s"
+                values="1; 0"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.3, 0.61, 0.355, 1"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="22" cy="22" r="1">
+              <animate
+                attributeName="r"
+                begin="-0.9s"
+                dur="1.8s"
+                values="1; 20"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.165, 0.84, 0.44, 1"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="stroke-opacity"
+                begin="-0.9s"
+                dur="1.8s"
+                values="1; 0"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.3, 0.61, 0.355, 1"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">ARTISAN</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+          <div class="cta-button">
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+          </div>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li><a href="#hero" class="mobile-link">Home</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#work" class="mobile-link">Work</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Crafting Digital <span class="highlight">Experiences</span></h1>
+            <p>
+              We design and develop exceptional digital products that help
+              innovative brands stand out in the digital landscape.
+            </p>
+            <div class="hero-buttons">
+              <a href="#work" class="btn-primary">View Our Work</a>
+              <a href="#services" class="btn-secondary">Our Services</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="browser-mockup">
+              <div class="browser-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="browser-content">
+                <img
+                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1064&q=80"
+                  alt="Design Dashboard"
+                />
+              </div>
+            </div>
+            <div class="geometric-shapes">
+              <div class="shape circle"></div>
+              <div class="shape square"></div>
+              <div class="shape triangle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="arrows">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+      <div class="container">
+        <h2>Trusted by Industry Leaders</h2>
+        <div
+          class="client-logos"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            text-align: center;
+          "
+        >
+          <!-- Facebook -->
+          <div class="client-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.19 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.5-3.89 3.8-3.89 1.1 0 2.25.2 2.25.2v2.48h-1.27c-1.25 0-1.64.78-1.64 1.57v1.89h2.78l-.44 2.9h-2.34v7.03C18.34 21.26 22 17.09 22 12.07z"
+              />
+            </svg>
+            <p style="color: white; margin: 8px 0 4px">Facebook</p>
+            <p style="color: white; font-size: 14px">
+              Platform jejaring sosial terbesar untuk koneksi global dan berbagi
+              konten.
+            </p>
+          </div>
+
+          <!-- Instagram -->
+          <div class="client-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm5.5-.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+              />
+            </svg>
+            <p style="color: white; margin: 8px 0 4px">Instagram</p>
+            <p style="color: white; font-size: 14px">
+              Berbagi momen visual, foto dan video untuk audiens global dengan
+              mudah.
+            </p>
+          </div>
+
+          <!-- Twitter -->
+          <div class="client-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22.46 6c-.77.35-1.6.59-2.46.7a4.28 4.28 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.27 4.27 0 00-7.3 3.89A12.1 12.1 0 013 5.15a4.27 4.27 0 001.32 5.7 4.25 4.25 0 01-1.93-.53v.05a4.28 4.28 0 003.43 4.19 4.3 4.3 0 01-1.92.07 4.28 4.28 0 003.99 2.97 8.58 8.58 0 01-5.3 1.83c-.34 0-.67-.02-1-.06a12.09 12.09 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.66 8.66 0 0024 4.56a8.53 8.53 0 01-2.54.7z"
+              />
+            </svg>
+            <p style="color: white; margin: 8px 0 4px">Twitter</p>
+            <p style="color: white; font-size: 14px">
+              Media real-time untuk berita, opini, dan tren dari seluruh dunia.
+            </p>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="client-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.52 3.48A11.88 11.88 0 0012.07 0 12 12 0 000 12a11.93 11.93 0 001.65 6.08L0 24l6.28-1.63A11.89 11.89 0 0012.07 24c6.63 0 12-5.37 12-12a11.91 11.91 0 00-3.55-8.52zM12.07 22c-1.77 0-3.49-.45-5.02-1.3l-.36-.2-3.72.97.99-3.63-.24-.38A10.02 10.02 0 012.02 12c0-5.52 4.53-10 10.05-10a9.94 9.94 0 017.09 2.94A9.88 9.88 0 0122.05 12c0 5.52-4.52 10-10 10zm5.44-7.57c-.3-.15-1.78-.88-2.05-.98-.27-.1-.46-.15-.65.15s-.75.97-.92 1.17c-.17.2-.34.22-.64.08a8.18 8.18 0 01-2.4-1.48 9.13 9.13 0 01-1.7-2.1c-.17-.29 0-.45.13-.6.13-.14.29-.34.43-.51.15-.18.2-.31.3-.52.1-.2.05-.38-.02-.53-.07-.15-.65-1.56-.89-2.14-.23-.56-.47-.48-.65-.49h-.55c-.2 0-.53.08-.81.38s-1.06 1.04-1.06 2.53 1.09 2.93 1.24 3.13c.15.2 2.14 3.28 5.19 4.6 1.82.78 2.53.85 3.44.71.55-.08 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.07-.13-.27-.21-.57-.36z"
+              />
+            </svg>
+            <p style="color: white; margin: 8px 0 4px">WhatsApp</p>
+            <p style="color: white; font-size: 14px">
+              Aplikasi pesan cepat yang populer untuk komunikasi personal dan
+              bisnis.
+            </p>
+          </div>
+
+          <!-- LINE -->
+          <div class="client-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2.05 12.02c0 5.07 5.02 9.2 11.2 9.2.92 0 1.8-.09 2.65-.25.61.34 3.61 1.67 3.61 1.67s-.5-2.54-.54-2.79a9.5 9.5 0 003.22-7.83C22.2 6.93 17.19 2.8 11 2.8 5.2 2.8 2.05 7.12 2.05 12.02zM8.23 10.55h-.91v3.49h.91v-3.5zm1.49 0v3.49h.91v-2.1l1.54 2.1h.73v-3.5h-.91v2.1l-1.53-2.1h-.74zm5.82 0h-.91v2.53h-1.11v.97h3.13v-.97h-1.1v-2.53zm1.62 0v3.49h.91v-2.1l1.54 2.1h.73v-3.5h-.91v2.1l-1.53-2.1h-.74z"
+              />
+            </svg>
+            <p style="color: white; margin: 8px 0 4px">LINE</p>
+            <p style="color: white; font-size: 14px">
+              Aplikasi chatting populer di Asia, mendukung teks, stiker, dan
+              panggilan gratis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="services-intro">
+          <div class="services-text">
+            <h2>Services that elevate your digital presence</h2>
+            <p>
+              We combine strategic thinking with cutting-edge technology to
+              create meaningful digital experiences that drive results.
+            </p>
+            <ul class="benefits-list">
+              <li>Tailored solutions for your unique business needs</li>
+              <li>Data-driven approach to maximize ROI</li>
+              <li>Continuous support and optimization</li>
+            </ul>
+          </div>
+          <div class="services-visual">
+            <div class="dot"></div>
+            <div class="shape-grid">
+              <div class="shape-item black-box"></div>
+              <div class="shape-item outline-box"></div>
+              <div class="shape-item outline-circle"></div>
+              <div class="shape-item black-triangle"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              We create intuitive, engaging interfaces that delight users and
+              drive conversions through research-backed design.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 9L12 2L22 9V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V9Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 22V12H15V22"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Our expert developers build fast, responsive, and scalable
+              websites and applications using the latest technologies.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 19L19 12L22 15L15 22L12 19Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18 13L16.5 5.5L2 2L5.5 16.5L13 18L18 13Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 2L9.586 9.586"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11 13C12.1046 13 13 12.1046 13 11C13 9.89543 12.1046 9 11 9C9.89543 9 9 9.89543 9 11C9 12.1046 9.89543 13 11 13Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Brand Strategy</h3>
+            <p>
+              We help you define your brand's voice, vision, and values to
+              create a cohesive identity that resonates with your audience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="feature" class="feature">
+      <div class="container">
+        <div class="feature-content">
+          <div class="feature-image">
+            <img
+              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Project 1"
+            />
+            <div class="image-placeholder"></div>
+          </div>
+          <div class="feature-text">
+            <div class="dot"></div>
+            <h2>Feature that is amazing</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Best Value Proposition</h2>
+          <p>
+            We've helped ambitious brands achieve their goals through strategic
+            design and development.
+          </p>
+        </div>
+        <div class="work-grid">
+          <div class="work-item">
+            <div class="work-image">
+              <img
+                src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1064&q=80"
+                alt="Project 1"
+              />
+              <div class="work-overlay">
+                <a href="#" class="btn-white-sm">View Project</a>
+              </div>
+            </div>
+            <h3>Modern E-commerce Platform</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+          <div class="work-item">
+            <div class="work-image">
+              <img
+                src="https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?auto=format&fit=crop&w=1064&q=80"
+                alt="Project 2"
+              />
+              <div class="work-overlay">
+                <a href="#" class="btn-white-sm">View Project</a>
+              </div>
+            </div>
+            <h3>Financial Dashboard App</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+          <div class="work-item">
+            <div class="work-image">
+              <img
+                src="https://images.unsplash.com/photo-1618556450991-2f1af64e8191?auto=format&fit=crop&w=1064&q=80"
+                alt="Project 3"
+              />
+              <div class="work-overlay">
+                <a href="#" class="btn-white-sm">View Project</a>
+              </div>
+            </div>
+            <h3>Healthcare Mobile Application</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial">
+      <div class="container">
+        <blockquote>
+          "Artisan transformed our digital presence completely. Their strategic
+          approach and attention to detail resulted in a 40% increase in user
+          engagement."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar"></div>
+          <p>Maria Lopez, VP of Design at Meshery</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Your Best Value Proposition</h2>
+            <p class="main-desc">
+              We're a team of strategists, designers, and developers who are
+              passionate about creating digital experiences that drive business
+              growth.
+            </p>
+            <p class="sub-desc">
+              Our collaborative approach ensures that every project we undertake
+              is aligned with your business goals and delivers measurable
+              results.
+            </p>
+            <div class="team-member">
+              <div class="member-avatar"></div>
+              <p>Dhaka Oke, Creative Director</p>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1734700920704-1e8000437a00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Let's create something amazing together</h2>
+            <p>
+              Ready to elevate your digital presence? Get in touch with us to
+              discuss your project.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 16.92V19.92C22 20.4704 21.7893 20.9991 21.4142 21.3742C21.0391 21.7493 20.5104 21.96 19.96 21.96C18.4536 21.96 16.9675 21.6443 15.59 21.03C14.2017 20.4165 12.9439 19.5235 11.88 18.41C10.7666 17.3461 9.87351 16.0883 9.26 14.7C8.64566 13.3225 8.33 11.8364 8.33 10.33C8.33 9.77956 8.54071 9.25086 8.91578 8.87578C9.29086 8.50071 9.81956 8.29 10.37 8.29H13.37C13.8604 8.29 14.3365 8.47611 14.7015 8.81118C15.0665 9.14625 15.2988 9.60539 15.36 10.09C15.4685 10.8297 15.6427 11.5545 15.88 12.25C16.0205 12.6288 16.0514 13.0429 15.9688 13.4392C15.8861 13.8355 15.6938 14.1977 15.42 14.48L14.2 15.7C15.1488 16.8083 16.2717 17.7751 17.53 18.56L18.77 17.32C19.0523 17.0462 19.4145 16.8539 19.8108 16.7712C20.2071 16.6886 20.6212 16.7195 21 16.86C21.6955 17.0973 22.4203 17.2715 23.16 17.38C23.6546 17.4412 24.1137 17.6735 24.4488 18.0385C24.7839 18.4035 24.97 18.8796 24.97 19.37V22.37C24.97 22.9204 24.7593 23.4491 24.3842 23.8242C24.0091 24.1993 23.4804 24.41 22.93 24.41"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 6L12 13L2 6"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>hello@artisanstudio.com</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>123 Design Street, New York, NY 10001</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-white">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo">ARTISAN</div>
+            <p>Premium Design Studio</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Brand Strategy</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Content Creation</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Connect</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6 9H2V21H6V9Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Artisan Design Studio. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
