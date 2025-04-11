@@ -1,0 +1,279 @@
+/* Dark Mode Styles */
+:root {
+  --transition-theme: all 0.3s ease;
+}
+
+body.dark-mode {
+  --primary-color: #fff;
+  --secondary-color: #111;
+  --accent-color: #222;
+  --text-color: #f5f5f5;
+  --text-light: #aaa;
+  background-color: #111;
+}
+
+body.dark-mode header.scrolled {
+  background-color: rgba(17, 17, 17, 0.95);
+}
+
+body.dark-mode .service-card:hover {
+  border-color: #333;
+}
+
+body.dark-mode .service-icon {
+  background-color: #222;
+}
+
+body.dark-mode .feature,
+body.dark-mode .testimonial {
+  background-color: #0a0a0a;
+}
+
+body.dark-mode .scroll-progress-bar {
+  background-color: #fff;
+}
+
+/* Dark mode fixes for text and elements */
+body.dark-mode .highlight {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+body.dark-mode .shape.circle,
+body.dark-mode .shape.square,
+body.dark-mode .outline-box,
+body.dark-mode .outline-circle {
+  border-color: #fff;
+}
+
+body.dark-mode .black-box,
+body.dark-mode .black-triangle {
+  background-color: #fff;
+}
+
+body.dark-mode .benefits-list li::before {
+  background-color: #fff;
+}
+
+body.dark-mode .mouse {
+  border-color: #fff;
+}
+
+body.dark-mode .wheel {
+  background-color: #fff;
+}
+
+body.dark-mode .arrows span {
+  border-color: #fff #fff transparent transparent;
+}
+
+body.dark-mode .btn-outline {
+  color: #fff;
+  border-color: #fff;
+}
+
+body.dark-mode .btn-outline:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+body.dark-mode .learn-more {
+  color: #aaa;
+}
+
+body.dark-mode .learn-more:hover {
+  color: #fff;
+}
+
+/* Contact form fixes for dark mode */
+body.dark-mode .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .form-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark-mode .validation-message {
+  color: #ff6b6b;
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-theme);
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode-toggle svg {
+  width: 24px;
+  height: 24px;
+  transition: var(--transition-theme);
+}
+
+.sun-icon {
+  opacity: 1;
+  position: absolute;
+}
+
+.moon-icon {
+  opacity: 0;
+  position: absolute;
+}
+
+body.dark-mode .sun-icon {
+  opacity: 0;
+}
+
+body.dark-mode .moon-icon {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links,
+  .cta-button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-content,
+  .services-intro,
+  .feature-content,
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero {
+    padding: 150px 0 80px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .geometric-shapes {
+    display: none;
+  }
+
+  .services-visual {
+    height: 300px;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial blockquote {
+    font-size: 24px;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about-stats {
+    flex-wrap: wrap;
+  }
+
+  /* Responsive image fixes */
+  .feature-image img {
+    max-height: 300px;
+  }
+
+  .service-icon {
+    margin: 0 auto 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-author {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .author-img {
+    margin-right: 0;
+  }
+
+  /* More responsive fixes for small screens */
+  .feature-image img {
+    max-height: 250px;
+  }
+}
