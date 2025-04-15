@@ -20,6 +20,7 @@ export const initWork = () => {
           "data-filter",
           filter.toLowerCase().replace(" ", "-")
         );
+        button.setAttribute("aria-label", `Filter work items by ${filter}`);
 
         button.addEventListener("click", function () {
           // Remove active class from all buttons
@@ -126,7 +127,7 @@ export const initWork = () => {
       lightbox.className = "lightbox";
       lightbox.innerHTML = `
         <div class="lightbox-content">
-          <span class="lightbox-close">&times;</span>
+          <span class="lightbox-close" aria-label="Close project details">&times;</span>
           <div class="lightbox-image-container">
             <img class="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Project Image">
           </div>

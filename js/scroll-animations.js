@@ -16,6 +16,7 @@ export const initScrollAnimations = () => {
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
+      will-change: opacity, transform;
     }
     
     .fade-in.visible {
@@ -27,6 +28,7 @@ export const initScrollAnimations = () => {
       opacity: 0;
       transform: translateX(-30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
+      will-change: opacity, transform;
     }
     
     .fade-in-left.visible {
@@ -38,6 +40,7 @@ export const initScrollAnimations = () => {
       opacity: 0;
       transform: translateX(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
+      will-change: opacity, transform;
     }
     
     .fade-in-right.visible {
@@ -48,7 +51,8 @@ export const initScrollAnimations = () => {
     .scale-in {
       opacity: 0;
       transform: scale(0.9);
-      transition: opacity 0.8s ease, transform 0.8s ease;
+      transition: opacity 1s ease, transform 1s ease;
+      will-change: opacity, transform;
     }
     
     .scale-in.visible {
@@ -74,7 +78,7 @@ export const initScrollAnimations = () => {
       if (rightElement) rightElement.classList.add("fade-in-right");
     } else if (element.classList.contains("client-logo")) {
       element.classList.add("scale-in");
-      element.style.transitionDelay = `${index * 0.1}s`;
+      element.style.transitionDelay = `${index * 0.2}s`;
     } else {
       element.classList.add("fade-in");
 
@@ -96,7 +100,11 @@ export const initScrollAnimations = () => {
 
     animationElements.forEach((element) => {
       if (isInViewport(element, 100)) {
+        // Add visible class when in viewport
         element.classList.add("visible");
+      } else {
+        // Remove visible class when out of viewport
+        element.classList.remove("visible");
       }
     });
   };
