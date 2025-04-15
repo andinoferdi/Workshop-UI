@@ -96,29 +96,35 @@
 
 .contact-form button[type="submit"] {
   width: 100%;
-  padding: 14px 24px;
-  background-color: #007bff;
-  color: white;
+  padding: 16px 24px;
+  background: #fff;
+  color: #000;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 4px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .contact-form button[type="submit"]:hover {
-  background-color: #0056b3;
-  transform: translateY(-1px);
+  background: #fff;
+  color: #000;
+  transform: none;
 }
 
 .contact-form button[type="submit"]:active {
-  transform: translateY(0);
+  transform: none;
+}
+
+.contact-form button[type="submit"]:disabled {
+  background: #fff;
+  color: #000;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .contact-form button[type="submit"].loading {
-  position: relative;
-  color: transparent;
+  color: #000;
 }
 
 .contact-form button[type="submit"].loading::after {
@@ -129,22 +135,16 @@
   top: 50%;
   left: 50%;
   margin: -10px 0 0 -10px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000;
   border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s ease-in-out infinite;
+  animation: spin 0.8s linear infinite;
 }
 
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
-}
-
-.contact-form button[type="submit"]:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-  transform: none;
 }
 
 /* Contact Section Styles */
@@ -300,47 +300,28 @@
   border-radius: 4px;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 1px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-form button[type="submit"]::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: 0.5s;
-}
-
-.contact-form button[type="submit"]:hover::before {
-  left: 100%;
 }
 
 .contact-form button[type="submit"]:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
-}
-
-.contact-form button[type="submit"]:disabled {
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.4);
-  cursor: not-allowed;
+  background: #fff;
+  color: #000;
   transform: none;
 }
 
+.contact-form button[type="submit"]:active {
+  transform: none;
+}
+
+.contact-form button[type="submit"]:disabled {
+  background: #fff;
+  color: #000;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .contact-form button[type="submit"].loading {
-  color: transparent;
+  color: #000;
 }
 
 .contact-form button[type="submit"].loading::after {
@@ -392,12 +373,25 @@
     padding: 30px;
   }
 
+  /* Ensure contact form button maintains style on mobile */
+  .contact-form button[type="submit"] {
+    width: 100%;
+    padding: 16px 24px !important;
+    background: #fff !important;
+    color: #000 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+  }
+
   /* Super aggressive targeting for mobile menu buttons */
-  /* Target ALL buttons on mobile */
-  button, 
-  [role="button"],
-  .btn,
-  .button,
+  /* Target ALL buttons on mobile EXCEPT contact form submit button */
+  button:not(.contact-form button[type="submit"]), 
+  [role="button"]:not(.contact-form button[type="submit"]),
+  .btn:not(.contact-form button[type="submit"]),
+  .button:not(.contact-form button[type="submit"]),
   .mobile-menu-button,
   .hamburger-icon,
   .menu-toggle,
