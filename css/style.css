@@ -391,4 +391,75 @@
   .contact-form {
     padding: 30px;
   }
+
+  /* Super aggressive targeting for mobile menu buttons */
+  /* Target ALL buttons on mobile */
+  button, 
+  [role="button"],
+  .btn,
+  .button,
+  .mobile-menu-button,
+  .hamburger-icon,
+  .menu-toggle,
+  .close-button,
+  .menu-close,
+  .mobile-menu-close,
+  .nav-toggle,
+  .navbar-toggler,
+  .navbar-close,
+  /* Target elements with X icon or close icon */
+  [aria-label="Close"],
+  [aria-label="Close menu"],
+  [aria-label="Close navigation"],
+  [aria-label="Toggle menu"],
+  [aria-label="Toggle navigation"],
+  /* Target by common icon class names */
+  .x-icon,
+  .close-icon,
+  .hamburger,
+  .menu-icon,
+  /* Target by data attributes */
+  [data-toggle="menu"],
+  [data-toggle="navbar"],
+  [data-toggle="navigation"],
+  [data-action="close"],
+  [data-action="toggle"] {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    outline: none !important;
+  }
+
+  /* Target SVG icons directly */
+  svg.x-icon,
+  svg.close-icon,
+  svg.hamburger-icon,
+  svg.menu-icon,
+  button svg,
+  [role="button"] svg,
+  .btn svg,
+  .button svg {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+
+  /* Target parent elements that might have padding/borders */
+  .navbar-toggler-icon,
+  .menu-button-container,
+  .menu-icon-container,
+  .nav-toggle-container,
+  .menu-toggle-wrapper,
+  .hamburger-wrapper,
+  .close-button-wrapper {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
 }
