@@ -256,7 +256,26 @@ body.dark-mode .moon-icon {
 @media (max-width: 480px) {
   .hero-buttons {
     flex-direction: column;
-    gap: 16px;
+    width: 100%;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
   }
 
   .footer-links {
@@ -265,15 +284,19 @@ body.dark-mode .moon-icon {
 
   .testimonial-author {
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    text-align: center;
   }
 
   .author-img {
-    margin-right: 0;
+    margin-bottom: 15px;
   }
 
-  /* More responsive fixes for small screens */
   .feature-image img {
     max-height: 250px;
+  }
+
+  .container {
+    padding: 0 20px;
   }
 }

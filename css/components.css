@@ -335,3 +335,131 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.client-logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.client-logo i {
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+.client-logo:hover i {
+  color: #fff;
+}
+
+/* Specific hover colors for each platform */
+.client-logo:hover .fa-instagram {
+  color: #e1306c;
+}
+
+.client-logo:hover .fa-whatsapp {
+  color: #25d366;
+}
+
+.client-logo:hover .fa-twitter {
+  color: #1da1f2;
+}
+
+.client-logo:hover .fa-telegram {
+  color: #0088cc;
+}
+
+.client-logo:hover .fa-youtube {
+  color: #ff0000;
+}
+
+.social-description {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive styles for services section */
+@media screen and (max-width: 768px) {
+  .services {
+    padding: 80px 0;
+  }
+
+  .services-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .services-text h2 {
+    font-size: 32px;
+  }
+
+  .services-visual {
+    height: 300px;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .shape-grid {
+    position: relative;
+    transform: rotate(0deg);
+    left: auto;
+    top: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .dot {
+    display: none; /* Hide the dot on mobile for cleaner look */
+  }
+
+  .shape-item {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  .black-triangle {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid #000;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 30px 20px;
+  }
+}

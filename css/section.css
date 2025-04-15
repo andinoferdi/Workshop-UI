@@ -217,21 +217,63 @@
 .client-logos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
+  gap: 15px;
   align-items: center;
   justify-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .client-logo {
   opacity: 0.8;
   transition: var(--transition);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .client-logo:hover {
   opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.client-logo svg {
-  width: 120px;
-  height: 40px;
+.client-logo i {
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .client-logos {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 400px;
+  }
+
+  .client-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .client-logos {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 250px;
+    padding: 0 15px;
+  }
+
+  .client-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .client-logos .client-logo:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
 }
