@@ -18,6 +18,36 @@ This project is a single-page portfolio website for a design agency that showcas
 - Parallax effects
 - Preloader animation
 
+## Screenshots
+
+### 1.
+
+![Homepage Hero Section](./assets/screenshot1.jpg)
+
+### 2.
+
+![Services Section](./assets/screenshot2.jpg)
+
+### 3.
+
+![Portfolio Gallery](./assets/screenshot3.jpg)
+
+### 4.
+
+![About Us Section](./assets/screenshot4.jpg)
+
+### 5.
+
+![Testimonials](./assets/screenshot5.jpg)
+
+### 6.
+
+![Contact Form](./assets/screenshot6.jpg)
+
+### 7.
+
+![Mobile View](./assets/screenshot7.jpg)
+
 ## Technology Stack
 
 - HTML5
