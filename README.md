@@ -22,31 +22,31 @@ This project is a single-page portfolio website for a design agency that showcas
 
 ### 1.
 
-![Homepage Hero Section](./assets/screenshot1.jpg)
+![Homepage Hero Section](./assets/image1.png)
 
 ### 2.
 
-![Services Section](./assets/screenshot2.jpg)
+![Services Section](./assets/image2.png)
 
 ### 3.
 
-![Portfolio Gallery](./assets/screenshot3.jpg)
+![Portfolio Gallery](./assets/image3.png)
 
 ### 4.
 
-![About Us Section](./assets/screenshot4.jpg)
+![About Us Section](./assets/image4.png)
 
 ### 5.
 
-![Testimonials](./assets/screenshot5.jpg)
+![Testimonials](./assets/image5.png)
 
 ### 6.
 
-![Contact Form](./assets/screenshot6.jpg)
+![Contact Form](./assets/image6.png)
 
 ### 7.
 
-![Mobile View](./assets/screenshot7.jpg)
+![Mobile View](./assets/image7.png)
 
 ## Technology Stack
 
