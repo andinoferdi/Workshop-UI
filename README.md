@@ -20,31 +20,31 @@ This project is a single-page portfolio website for a design agency that showcas
 
 ## Screenshots
 
-### 1.
+### 1. Hero Section
 
 ![Homepage Hero Section](./assets/image1.png)
 
-### 2.
+### 2. Services Section
 
 ![Services Section](./assets/image2.png)
 
-### 3.
+### 3. Feature Section
 
 ![Portfolio Gallery](./assets/image3.png)
 
-### 4.
+### 4. Work Section
 
 ![About Us Section](./assets/image4.png)
 
-### 5.
+### 5. Testimonial Section
 
 ![Testimonials](./assets/image5.png)
 
-### 6.
+### 6. About Section
 
 ![Contact Form](./assets/image6.png)
 
-### 7.
+### 7. Contact Section
 
 ![Mobile View](./assets/image7.png)
 
